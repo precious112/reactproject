@@ -1,12 +1,16 @@
 {
   "name": "frontend",
+   "engines": {
+    "node": ">=14.15.4"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
